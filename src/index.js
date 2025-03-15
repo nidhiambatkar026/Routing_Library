@@ -8,21 +8,21 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const router = createBrowserRouter([
     {
         path : "/",
-        element : <Home/>
+        element : <Home/>,
     },
     {
-        path : "./dashboard",
-        element: <Dashboard/>
+        path : "/dashboard",
+        element: <Dashboard/>,
     },
     {
-        path: "./about",
-        element : <About />
+        path: "/about",
+        element : <About />,
     },
     {
-        path :  "./contact",
-        element: <Contact />
+        path :  "/contact",
+        element: <Contact />,
     }
 ])
 
 const root = createRoot(document.getElementById("root"));
-root.render(<RouterProvider Router ={router} />);
+root.render(<RouterProvider router ={router} />);
